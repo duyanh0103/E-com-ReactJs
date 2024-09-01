@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container{max-width: 90%;}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+}
+.header img {
+  width: 100%;
+}
+.header .search .countryDrop{
+  width: 170px;
+  height: 60px;
+  min-width: 170px;
+  /* padding: 0px 10px; */
+}
+.header .search .countryDrop{ text-align: left; justify-content: flex-start !important; color: rgb(12, 12, 12); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 10px 15px;}
+.header .search .countryDrop .label{ font-size: 12px !important; text-transform: capitalize !important; color: rgba(0, 0, 0, 0.7) !important; line-height: 16px;}
+.header .search .countryDrop .name{ font-size: 12px !important; text-transform: capitalize !important; color: rgba(245, 148, 3, 0.8) !important; font-weight: 700; line-height: 16px;}
+.header .search .countryDrop span.ml-auto svg{opacity: 0.7;}
+
+/* search input */
+header .headerSearch {
+  width: 60%;
+  height: 60px;
+  background: rgb(245, 241, 241);
+  padding: 10px;
+  position: relative;
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+header .headerSearch .inputSearch {
+  background: transparent;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  outline: none;
+  border: 0px;
+}
+
+header .headerSearch button {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  z-index: 5;
+  min-width: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: rgb(250, 125, 0);
+}
+header .headerSearch button svg{
+  font-size: 30px;
+}
+/* end search */
+header .last .circle{
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height:  50px;
+  width: 50px;
+  border-radius: 50%;
+  color: rgb(250, 125, 0);
+  font-size: 20px;
+  border: 1px solid rgba(250, 125, 0,0.7);
+}
+
+.cartTab .price{font-size: 18px; color: rgba(0, 0, 0, 0.8); font-weight: 700;}
+.cartTab button{
+  background-color: #fff1ee;
+}
+/* .cartTab button svg {
+  background-color: red;
+} */
+.cartTab .count{position: absolute; top: -7px; right: -5px; background-color: orangered; padding: 5px; border-radius: 50%; width: 25px; height: 25px; color: white;}
