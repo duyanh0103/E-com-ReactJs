@@ -1,12 +1,17 @@
 import React from "react";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo_white.png";
 import { Link } from "react-router-dom";
 
-import CountryDropDown from "../CountryDropDown";
-import { Button, Input } from "@mui/material";
+import DanhMucDropDown from "../DanhMucDropDown";
+import { Button } from "@mui/material";
 import { CiSearch } from "react-icons/ci";
-import { FiUser } from "react-icons/fi";
-import { BsCart3 } from "react-icons/bs";
+
+
+import ContactBtn from "../headerButton/contactBtn";
+import HeThongBtn from "../headerButton/heThongBtn";
+import DonHangBtn from "../headerButton/donHangBtn";
+import CartBtn from "../headerButton/cartBtn";
+import LoginBtn from "../headerButton/Login";
 
 export default function Header() {
   return (
@@ -20,25 +25,31 @@ export default function Header() {
             </Link>
           </div>
           <div className="d-flex align-items-center col-sm-10 search">
-                <CountryDropDown/>
-                {/* Header search start */}
-                <div className="headerSearch">
-                    <input  type="text"className="inputSearch "  placeholder="Tìm kiếm sản phẩm..."/>
-                    <Button><CiSearch size={24} className="searchIcon"/></Button>
-                </div>
-                {/* Header search end */}
+            <DanhMucDropDown />
+            {/* Header search start */}
+            <div className="headerSearch">
+              <input
+                type="text"
+                className="inputSearch "
+                placeholder="Tìm kiếm sản phẩm..."
+              />
+              <Button>
+                <CiSearch size={24} className="searchIcon" />
+              </Button>
+            </div>
+            {/* Header search end */}
 
-                <div className="d-flex align-items-center last ml-auto">
-                  <Button className="circle mr-3"><FiUser/></Button>
-                  <div className="ml-auto d-flex align-items-center cartTab">
-                    <span className="price">500,000 VND</span>
-                    <div className="position-relative ml-2">
-                      <Button className="circle"><BsCart3/></Button>
-                      <span className="count d-flex align-items-center justify-content-center">2</span>
-                    </div>
-                    
-                  </div>
-                </div>
+            <div className="d-flex align-items-center last ml-auto">
+              <ContactBtn />
+
+              <HeThongBtn />
+
+              <DonHangBtn />
+              <div className="ml-auto d-flex align-items-center cartTab">
+                <CartBtn />
+                <LoginBtn/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
