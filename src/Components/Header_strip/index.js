@@ -3,16 +3,8 @@ import "./HeaderStrip.css";
 // import slider
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from 'react-slideshow-image';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-const divStyle = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  backgroundSize: "cover",
-  height: "30px",
-  Padding: "0px",
-};
 const fadeImages = [
   {
     url: "https://file.hstatic.net/200000722513/file/asus_vivobook_16_-_m1605ya_mb303w_-_topbar_82e4e17fb65d4103864f8eee46c3eaf2.png",
