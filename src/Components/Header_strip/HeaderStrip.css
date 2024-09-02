@@ -1,0 +1,11 @@
+.top-header{
+  position: relative;
+    z-index: 10;
+}
+.list-banners {
+  height: auto;
+  background-color: rgb(200, 234, 255);
+}
+.list-banners .react-slideshow-container .default-nav {
+  display: none;
+}

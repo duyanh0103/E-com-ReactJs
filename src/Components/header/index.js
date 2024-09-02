@@ -6,53 +6,58 @@ import DanhMucDropDown from "../DanhMucDropDown";
 import { Button } from "@mui/material";
 import { CiSearch } from "react-icons/ci";
 
-
+// import header
 import ContactBtn from "../headerButton/contactBtn";
 import HeThongBtn from "../headerButton/heThongBtn";
 import DonHangBtn from "../headerButton/donHangBtn";
 import CartBtn from "../headerButton/cartBtn";
 import LoginBtn from "../headerButton/Login";
 
+import HeaderStrip from "../Header_strip";
+
 export default function Header() {
   return (
-    <header className="header">
-      {/* <h1>E-com</h1> */}
-      <div className="container">
-        <div className="row">
-          <div className="logo d-flex align-items-center col-sm-2">
-            <Link to={"/"}>
-              <img src={Logo} alt="Logo" />
-            </Link>
-          </div>
-          <div className="d-flex align-items-center col-sm-10 search">
-            <DanhMucDropDown />
-            {/* Header search start */}
-            <div className="headerSearch">
-              <input
-                type="text"
-                className="inputSearch "
-                placeholder="Tìm kiếm sản phẩm..."
-              />
-              <Button>
-                <CiSearch size={24} className="searchIcon" />
-              </Button>
+    <div className="headerWrapper">
+      <HeaderStrip />
+      <header className="header">
+        {/* <h1>E-com</h1> */}
+        <div className="container">
+          <div className="row">
+            <div className="logo d-flex align-items-center col-sm-2">
+              <Link to={"/"}>
+                <img src={Logo} alt="Logo" />
+              </Link>
             </div>
-            {/* Header search end */}
+            <div className="d-flex align-items-center col-sm-10 search">
+              <DanhMucDropDown />
+              {/* Header search start */}
+              <div className="headerSearch">
+                <input
+                  type="text"
+                  className="inputSearch "
+                  placeholder="Tìm kiếm sản phẩm..."
+                />
+                <Button>
+                  <CiSearch size={24} className="searchIcon" />
+                </Button>
+              </div>
+              {/* Header search end */}
 
-            <div className="d-flex align-items-center last ml-auto">
-              <ContactBtn />
+              <div className="d-flex align-items-center last ml-auto">
+                <ContactBtn />
 
-              <HeThongBtn />
+                <HeThongBtn />
 
-              <DonHangBtn />
-              <div className="ml-auto d-flex align-items-center cartTab">
-                <CartBtn />
-                <LoginBtn/>
+                <DonHangBtn />
+                <div className="ml-auto d-flex align-items-center cartTab">
+                  <CartBtn />
+                  <LoginBtn />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
