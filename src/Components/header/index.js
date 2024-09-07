@@ -14,6 +14,8 @@ import CartBtn from "../headerButton/cartBtn";
 import LoginBtn from "../headerButton/Login";
 
 import HeaderStrip from "../Header_strip";
+import SearchBar from "../SearchBar";
+import SubHeader from "../SubHeader";
 
 export default function Header() {
   return (
@@ -31,16 +33,7 @@ export default function Header() {
             <div className="d-flex align-items-center col-sm-10 search">
               <DanhMucDropDown />
               {/* Header search start */}
-              <div className="headerSearch">
-                <input
-                  type="text"
-                  className="inputSearch "
-                  placeholder="Tìm kiếm sản phẩm..."
-                />
-                <Button>
-                  <CiSearch size={24} className="searchIcon" />
-                </Button>
-              </div>
+              <SearchBar />
               {/* Header search end */}
 
               <div className="d-flex align-items-center last ml-auto">
@@ -58,6 +51,8 @@ export default function Header() {
           </div>
         </div>
       </header>
+      {/* Subheader */}
+      <SubHeader/>
     </div>
   );
 }
