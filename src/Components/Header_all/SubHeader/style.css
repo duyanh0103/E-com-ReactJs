@@ -1,0 +1,91 @@
+/* *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.sub-header {
+  background-color: #fff;
+  padding: px;
+  position: relative;
+  z-index: 1;
+}
+
+.list-submenu{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-submenu .item-submenu a span{
+    color: black;
+}
+@media (min-width: 992px) {
+    .list-submenu .item-submenu:not(:last-child) a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: #CFCFCF;
+        height: 62%;
+        width: 1px;
+    }
+} */
+
+
+.sub-header {
+    background-color: #fff;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    border-top: 4px solid red; /* Add the red top border */
+  }
+  
+  .container-fluid {
+    max-width: 1200px; /*Set max-width for centering*/
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .list-submenu--desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .item-submenu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .item-submenu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .item-submenu span {
+    margin-left: 5px; /* Space between icon and text */
+    color: black;
+    
+  }
+
+  .item-submenu span:hover{
+    color: #be1529;
+  }
+  
+  /* Divider between items */
+  .item-submenu:not(:last-child)::after {
+    content: '';
+    height: 20px;
+    width: 1px;
+    background-color: #ddd;
+    position: absolute;
+    right: -15px; /* Adjust space between items */
+  }
+  

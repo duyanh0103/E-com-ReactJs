@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/logo_white.png";
+import Logo from "../../../assets/images/logo_white.png";
 import { Link } from "react-router-dom";
 
 import DanhMucDropDown from "../DanhMucDropDown";

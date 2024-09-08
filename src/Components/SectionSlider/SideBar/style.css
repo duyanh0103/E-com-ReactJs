@@ -1,0 +1,109 @@
+/* sidebar */
+.container-fluid {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+  
+  .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 992px) {
+    .section-slider .index-slider--wrap {
+        padding-top: 17px;
+    }
+  }
+  
+  
+  .section-slider .index-slider--wrap {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 8px;
+  }
+  
+  @media (min-width: 1170px) {
+    .section-slider .index-slider--wrap .index-slider--nav {
+        display: block;
+    }
+  }
+  
+  
+  .section-slider .index-slider--wrap .index-slider--nav {
+    /* display: none; */
+    color: #333;
+    cursor: pointer;
+    align-items: center;
+    user-select: none;
+    z-index: 1;
+    margin-right: 8px;
+    position: relative;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  
+  .sidebar-menu {
+    background: #fff;
+    padding: 0;
+    width: 216px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  
+  .sidebar-menu .megamenu-nav {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    height: 496px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  
+  .sidebar-menu .megamenu-nav-main {
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .sidebar-menu .megamenu-item {
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .sidebar-menu .megamenu-item .megamenu-link {
+    font-size: 13px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 31px;
+    margin: 0;
+    position: relative;
+    transition: none;
+  }
+  
+  a {
+    color: var(--textcolor);
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /* justify-content: space-between; */
+  }
+  
+  .sidebar-menu .megamenu-item:hover .megamenu-link {
+    color: white;
+    background-color: #ea1c04;
+    outline: none;
+  }
