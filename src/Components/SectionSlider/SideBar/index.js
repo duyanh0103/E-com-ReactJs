@@ -1,7 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MdLaptop } from "react-icons/md";
+import { FaGamepad } from "react-icons/fa";
+import { BsPcDisplay } from "react-icons/bs";
+import { RiRam2Line } from "react-icons/ri";
+import { LuGamepad, LuSpeaker } from "react-icons/lu";
+import { CgScreen } from "react-icons/cg";
+import { FaRegKeyboard } from "react-icons/fa6";
+import { BsMouse } from "react-icons/bs";
+import { RiHeadphoneLine } from "react-icons/ri";
+import { PiOfficeChairLight } from "react-icons/pi";
+import { LuPrinter } from "react-icons/lu";
+import { LuGift } from "react-icons/lu";
 import { FaAngleRight } from "react-icons/fa6";
+
 
 import "./style.css";
 const menuList = [
@@ -10,59 +22,63 @@ const menuList = [
     name: "Laptop",
   },
   {
-    icon: MdLaptop,
+    icon: LuGamepad,
     name: "Laptop Gaming",
   },
   {
-    icon: MdLaptop,
+    icon: BsPcDisplay,
     name: "PC GVN",
   },
   {
-    icon: MdLaptop,
+    icon: BsPcDisplay,
     name: "Main, CPU, VGA",
   },
   {
-    icon: MdLaptop,
+    icon: BsPcDisplay,
+    name: "Case, Nguồn, Tản",
+  },
+  {
+    icon: RiRam2Line,
     name: "Ổ cứng, RAM, Thẻ nhớ",
   },
   {
-    icon: MdLaptop,
+    icon: LuSpeaker,
     name: "Loa, Micro, Webcam",
   },
   {
-    icon: MdLaptop,
+    icon: CgScreen,
     name: "Màn Hình",
   },
   {
-    icon: MdLaptop,
+    icon: FaRegKeyboard,
     name: "Bàn Phím",
   },
   {
-    icon: MdLaptop,
+    icon: BsMouse,
     name: "Chuột + Lót Chuột",
   },
   {
-    icon: MdLaptop,
+    icon: RiHeadphoneLine,
     name: "Tai Nghe",
   },
   {
-    icon: MdLaptop,
+    icon: PiOfficeChairLight,
     name: "Ghế - Bàn",
   },
   {
-    icon: MdLaptop,
+    icon: LuPrinter,
     name: "Phần mềm, mạng",
   },
   {
-    icon: MdLaptop,
+    icon: LuGamepad,
     name: "Handheld, Console",
   },
   {
-    icon: MdLaptop,
+    icon: LuGamepad,
     name: "Phụ Kiện (Hub, sạc, cáp...)",
   },
   {
-    icon: MdLaptop,
+    icon: LuGift,
     name: "Thủ Thuật Giải đáp",
   },
 ];

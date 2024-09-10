@@ -1,0 +1,46 @@
+.section-slider .index-slider--wrap .index-slider--banner .index-slider--row .index-slider--coll.coll-left .index-banner--top {
+    overflow: hidden;
+    position: relative;
+}
+
+.react-slideshow-container+ul.indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    top: -50px;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    font-size: 0;
+    width: 20px;
+    height: 4px;
+    margin: 0 4px;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+    padding: 2px;
+    /* background-color: red; */
+}
+
+.react-slideshow-container+ul.indicators li {
+    display: inline-block;
+    position: relative;
+    width: 7px;
+    height: 2px;
+    padding: 5px;
+    margin: 0;
+    width: 30px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+    padding: 2px;
+    /* background-color: red;*/
+}

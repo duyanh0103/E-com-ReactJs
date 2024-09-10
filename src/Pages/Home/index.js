@@ -1,6 +1,7 @@
 import React from "react";
 
 import SideBarMenu from "../../Components/SectionSlider/SideBar";
+import Banner from "../../Components/SectionSlider/Banner";
 export default function Home() {
   return (
     <div className="wrapperMain_content">
@@ -8,7 +9,7 @@ export default function Home() {
         <div className="container-fluid">
           <div className="d-flex index-slider--wrap">
             <SideBarMenu />
-            <div className="index-slider--banner"></div>
+            <Banner />
           </div>
         </div>
       </div>

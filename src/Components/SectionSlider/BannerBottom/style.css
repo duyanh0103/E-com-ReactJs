@@ -1,0 +1,20 @@
+
+@media (min-width: 992px) {
+    .section-slider .index-slider--wrap .index-slider--banner .index-slider--row .index-slider--coll.coll-left .index-banner--bottom {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-slider .index-slider--wrap .index-slider--banner .index-slider--row .index-slider--coll.coll-left .index-banner--list {
+        display: flex;
+        margin: 0 -4px;
+        padding-top: 7px;
+    }
+}
+
+.index-banner--list img{
+    width: 100%;
+    position: relative;
+    top: -40px;
+}

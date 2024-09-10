@@ -35,7 +35,6 @@
   
   
   .section-slider .index-slider--wrap .index-slider--nav {
-    /* display: none; */
     color: #333;
     cursor: pointer;
     align-items: center;
@@ -77,10 +76,11 @@
   .sidebar-menu .megamenu-item {
     cursor: pointer;
     list-style-type: none;
+
   }
   
   .sidebar-menu .megamenu-item .megamenu-link {
-    font-size: 13px;
+    font-size: 12px;
     padding: 2px 16px;
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@
     -o-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    /* justify-content: space-between; */
+
   }
   
   .sidebar-menu .megamenu-item:hover .megamenu-link {
@@ -107,3 +107,26 @@
     background-color: #ea1c04;
     outline: none;
   }
+    
+
+
+.megamenu-item {
+  display: flex;
+  align-items: center;
+}
+
+.megamenu-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Change color as needed */
+}
+
+.megamenu-icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.megamenu-ic-right {
+  margin-left: auto; /* Push the right icon to the end */
+}
