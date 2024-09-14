@@ -14,7 +14,7 @@ const listBanner = [
   },
   {
     url: "https://file.hstatic.net/200000722513/file/layout_web_-06.png",
-    alt: "Subbanner 4",
+    alt: "Mini Pc",
   },
 ];
 const SubBanner = () => {
