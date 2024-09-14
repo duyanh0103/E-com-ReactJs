@@ -43,9 +43,7 @@
     border-radius: 4px;
 }
 
-
-
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .section-slider
     .index-slider--wrap
     .index-slider--banner
@@ -55,4 +53,6 @@
     padding-left: 8px;
     display: block;
   }
-} */
+}
+
+

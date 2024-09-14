@@ -13,7 +13,7 @@
     }
 }
 
-.index-banner--list img{
+.index-banner--bottom .index-banner--list  img{
     width: 100%;
     position: relative;
     top: -40px;

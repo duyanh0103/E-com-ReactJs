@@ -2,6 +2,7 @@ import React from "react";
 
 import SideBarMenu from "../../Components/SectionSlider/SideBar";
 import Banner from "../../Components/SectionSlider/Banner";
+import SubBanner from "../../Components/SectionSlider/SubBanner/SubBanner";
 export default function Home() {
   return (
     <div className="wrapperMain_content">
@@ -12,6 +13,9 @@ export default function Home() {
             <Banner />
           </div>
         </div>
+      </div>
+      <div className="section section-subbanners">
+        <SubBanner/>
       </div>
     </div>
   );

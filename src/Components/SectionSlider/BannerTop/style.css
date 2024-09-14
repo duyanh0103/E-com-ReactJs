@@ -1,46 +1,104 @@
-.section-slider .index-slider--wrap .index-slider--banner .index-slider--row .index-slider--coll.coll-left .index-banner--top {
+.section-slider
+  .index-slider--wrap
+  .index-slider--banner
+  .index-slider--row
+  .index-slider--coll.coll-left
+  .index-banner--top {
+  overflow: hidden;
+  position: relative;
+}
+
+.slick-style .slick-track {
+  display: flex;
+  margin: 0;
+  background-color: red;
+  opacity: 1;
+  width: 7161px;
+}
+
+.section-slider .index-slider--wrap .index-slider--banner .index-slider .aspect-ratio {
+    position: relative;
     overflow: hidden;
-    position: relative;
+    display: block;
+    padding-bottom: calc((var(--height-img) / var(--width-img))* 100%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.slick-style .slick-track .slick-slide {
+  outline: none;
+  height: 325px;
+  width: 651px;
+  top: 0px;
+  z-index: 998;
+  position: relative;
+  left: 0px;
+  /* opacity: 0; */
+  object-fit: contain;
+  max-width: 100%;
+  transition: opacity 1000ms;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out; 
 }
 
-.react-slideshow-container+ul.indicators {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    position: relative;
-    top: -50px;
+.react-slideshow-container + ul.indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  top: -50px;
 }
 
-.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
-    position: relative;
-    display: inline-block;
-    outline: none;
-    font-size: 0;
-    width: 20px;
-    height: 4px;
-    margin: 0 4px;
-    border-radius: 0;
-    border: none;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-    padding: 2px;
-    /* background-color: red; */
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-size: 0;
+  width: 20px;
+  height: 4px;
+  margin: 0 4px;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  padding: 2px;
+  /* background-color: red; */
 }
 
-.react-slideshow-container+ul.indicators li {
-    display: inline-block;
-    position: relative;
-    width: 7px;
-    height: 2px;
-    padding: 5px;
-    margin: 0;
-    width: 30px;
-    /* background: rgba(0, 0, 0, 0.3); */
-    -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-    padding: 2px;
-    /* background-color: red;*/
+.react-slideshow-container + ul.indicators li {
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 2px;
+  padding: 5px;
+  margin: 0;
+  width: 30px;
+  /* background: rgba(0, 0, 0, 0.3); */
+  /* -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out; */
+  padding: 2px;
+  /* background-color: red;*/
+}
+.section-slider
+  .index-slider--wrap
+  .index-slider--banner
+  .index-slider
+  .aspect-ratio
+  img {
+  position: absolute;
+  left: 0%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
 }

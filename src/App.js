@@ -1,17 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Home from "./Pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header_all/header";
-
+import {routes} from "./Routes";
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
     <Header/>
       <Routes>
-        <Route path="/" exact={true} element={<Home/>}/>
+        {routes.map((route) => {
+          const Page = route.page;
+          return (
+            <Route path={route.path} exact={true} element={<Page/>}/>
+          )
+        })}
+        
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
